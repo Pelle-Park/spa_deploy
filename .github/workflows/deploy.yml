@@ -25,7 +25,7 @@ jobs:
           rebar3-version: "3"
       - name: Install dependencies
         run: gleam deps download
-      - name: Build app
+      - name: Build spa_deploy
         run: gleam run -m lustre/dev build --minify --outdir=dist
       - name: Setup Pages
         uses: actions/configure-pages@v5
