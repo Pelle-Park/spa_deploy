@@ -27,8 +27,6 @@ jobs:
         run: gleam deps download
       - name: Build spa_deploy
         run: gleam run -m lustre/dev build --minify --outdir=dist
-      - name: Copy index.html
-        run: cp priv/static/index.html dist/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
